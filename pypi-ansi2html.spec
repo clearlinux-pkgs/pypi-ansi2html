@@ -4,7 +4,7 @@
 #
 Name     : pypi-ansi2html
 Version  : 1.7.0
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/8a/be/970968cdc65354cd73e12b6088b596bb0785dacc87dc54f4ee27082e0a0c/ansi2html-1.7.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/8a/be/970968cdc65354cd73e12b6088b596bb0785dacc87dc54f4ee27082e0a0c/ansi2html-1.7.0.tar.gz
 Summary  : UNKNOWN
@@ -15,7 +15,6 @@ Requires: pypi-ansi2html-license = %{version}-%{release}
 Requires: pypi-ansi2html-python = %{version}-%{release}
 Requires: pypi-ansi2html-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-BuildRequires : pypi(importlib_metadata)
 BuildRequires : pypi(py)
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(setuptools_scm)
@@ -62,7 +61,6 @@ Summary: python3 components for the pypi-ansi2html package.
 Group: Default
 Requires: python3-core
 Provides: pypi(ansi2html)
-Requires: pypi(importlib_metadata)
 
 %description python3
 python3 components for the pypi-ansi2html package.
@@ -77,7 +75,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1644192256
+export SOURCE_DATE_EPOCH=1649706531
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
