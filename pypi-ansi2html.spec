@@ -4,14 +4,13 @@
 #
 Name     : pypi-ansi2html
 Version  : 1.7.0
-Release  : 3
+Release  : 4
 URL      : https://files.pythonhosted.org/packages/8a/be/970968cdc65354cd73e12b6088b596bb0785dacc87dc54f4ee27082e0a0c/ansi2html-1.7.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/8a/be/970968cdc65354cd73e12b6088b596bb0785dacc87dc54f4ee27082e0a0c/ansi2html-1.7.0.tar.gz
 Summary  : UNKNOWN
 Group    : Development/Tools
 License  : LGPL-3.0
 Requires: pypi-ansi2html-bin = %{version}-%{release}
-Requires: pypi-ansi2html-filemap = %{version}-%{release}
 Requires: pypi-ansi2html-license = %{version}-%{release}
 Requires: pypi-ansi2html-python = %{version}-%{release}
 Requires: pypi-ansi2html-python3 = %{version}-%{release}
@@ -35,18 +34,9 @@ BuildRequires : pypi-virtualenv
 Summary: bin components for the pypi-ansi2html package.
 Group: Binaries
 Requires: pypi-ansi2html-license = %{version}-%{release}
-Requires: pypi-ansi2html-filemap = %{version}-%{release}
 
 %description bin
 bin components for the pypi-ansi2html package.
-
-
-%package filemap
-Summary: filemap components for the pypi-ansi2html package.
-Group: Default
-
-%description filemap
-filemap components for the pypi-ansi2html package.
 
 
 %package license
@@ -69,7 +59,6 @@ python components for the pypi-ansi2html package.
 %package python3
 Summary: python3 components for the pypi-ansi2html package.
 Group: Default
-Requires: pypi-ansi2html-filemap = %{version}-%{release}
 Requires: python3-core
 Provides: pypi(ansi2html)
 
@@ -89,7 +78,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1652992693
+export SOURCE_DATE_EPOCH=1652994699
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -135,10 +124,6 @@ popd
 %files bin
 %defattr(-,root,root,-)
 /usr/bin/ansi2html
-
-%files filemap
-%defattr(-,root,root,-)
-/usr/share/clear/filemap/filemap-pypi-ansi2html
 
 %files license
 %defattr(0644,root,root,0755)
