@@ -4,7 +4,7 @@
 #
 Name     : pypi-ansi2html
 Version  : 1.8.0
-Release  : 16
+Release  : 17
 URL      : https://files.pythonhosted.org/packages/62/88/491c699c135c63e4420f69e348c9f14559b82c2b81f5b4c698ae5c374a88/ansi2html-1.8.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/62/88/491c699c135c63e4420f69e348c9f14559b82c2b81f5b4c698ae5c374a88/ansi2html-1.8.0.tar.gz
 Summary  : No detailed summary available
