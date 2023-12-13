@@ -6,13 +6,13 @@
 # autospec commit: c1050fe
 #
 Name     : pypi-ansi2html
-Version  : 1.8.0
-Release  : 19
-URL      : https://files.pythonhosted.org/packages/62/88/491c699c135c63e4420f69e348c9f14559b82c2b81f5b4c698ae5c374a88/ansi2html-1.8.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/62/88/491c699c135c63e4420f69e348c9f14559b82c2b81f5b4c698ae5c374a88/ansi2html-1.8.0.tar.gz
-Summary  : No detailed summary available
+Version  : 1.9.1
+Release  : 20
+URL      : https://files.pythonhosted.org/packages/ca/f1/a82ae514fe3d2d66b20a24dd53d45f588a6c0a1d9b5f493eddff679bd99a/ansi2html-1.9.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/ca/f1/a82ae514fe3d2d66b20a24dd53d45f588a6c0a1d9b5f493eddff679bd99a/ansi2html-1.9.1.tar.gz
+Summary  : Convert text with ANSI color codes to HTML or to LaTeX
 Group    : Development/Tools
-License  : LGPL-3.0
+License  : LGPL-3.0 LGPL-3.0+
 Requires: pypi-ansi2html-bin = %{version}-%{release}
 Requires: pypi-ansi2html-license = %{version}-%{release}
 Requires: pypi-ansi2html-python = %{version}-%{release}
@@ -21,7 +21,6 @@ BuildRequires : buildreq-distutils3
 BuildRequires : pypi(py)
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(setuptools_scm)
-BuildRequires : pypi(wheel)
 BuildRequires : pypi-pluggy
 BuildRequires : pypi-pytest
 BuildRequires : pypi-tox
@@ -31,9 +30,7 @@ BuildRequires : pypi-virtualenv
 %define debug_package %{nil}
 
 %description
-.. image:: https://github.com/pycontribs/ansi2html/workflows/tox/badge.svg?branch=main
-:alt: Build Status - main branch
-:target: https://github.com/pycontribs/ansi2html/actions?query=workflow%3Atox+branch%3Amain
+[![Build Status - main branch](https://github.com/pycontribs/ansi2html/workflows/tox/badge.svg?branch=main)](https://github.com/pycontribs/ansi2html/actions?query=workflow%3Atox+branch%3Amain)
 
 %package bin
 Summary: bin components for the pypi-ansi2html package.
@@ -72,10 +69,10 @@ python3 components for the pypi-ansi2html package.
 
 
 %prep
-%setup -q -n ansi2html-1.8.0
-cd %{_builddir}/ansi2html-1.8.0
+%setup -q -n ansi2html-1.9.1
+cd %{_builddir}/ansi2html-1.9.1
 pushd ..
-cp -a ansi2html-1.8.0 buildavx2
+cp -a ansi2html-1.9.1 buildavx2
 popd
 
 %build
@@ -83,7 +80,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1702063950
+export SOURCE_DATE_EPOCH=1702495829
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
