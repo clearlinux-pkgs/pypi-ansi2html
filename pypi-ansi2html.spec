@@ -7,7 +7,7 @@
 #
 Name     : pypi-ansi2html
 Version  : 1.9.1
-Release  : 20
+Release  : 21
 URL      : https://files.pythonhosted.org/packages/ca/f1/a82ae514fe3d2d66b20a24dd53d45f588a6c0a1d9b5f493eddff679bd99a/ansi2html-1.9.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ca/f1/a82ae514fe3d2d66b20a24dd53d45f588a6c0a1d9b5f493eddff679bd99a/ansi2html-1.9.1.tar.gz
 Summary  : Convert text with ANSI color codes to HTML or to LaTeX
